@@ -1,4 +1,4 @@
-import "./Header.css"
+import "./Header.css";
 import selfPortrait from "../assets/self-portrait.png";
 
 
