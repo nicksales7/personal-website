@@ -17,3 +17,17 @@
   padding: 200px;
   font-size: 15px;
 }
+
+@media screen and (max-width: 768px) {
+  .App h1 {
+    padding: 50px;
+    font-size: 30px;
+    bottom: 30px;
+  }
+
+  .App h2 {
+    padding: 20px;
+    font-size: 12px;
+    bottom: 100px;
+  }
+}

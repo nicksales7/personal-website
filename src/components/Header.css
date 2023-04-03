@@ -1,16 +1,16 @@
-body{
+body {
     margin: 0;
     background-image: url("/src/assets/5562093.jpg");
-}
-
-.topNavigation {
+  }
+  
+  .topNavigation {
     background-color: #e1e1e1;
     overflow: hidden;
     border-radius: 30px;
     height: 110px;
-}
-
-.topNavigation a {
+  }
+  
+  .topNavigation a {
     float: right;
     color: #373737;
     text-align: center;
@@ -19,10 +19,13 @@ body{
     position: relative;
     bottom: 40px;
     font-size: 20px;
+    left: 120px;
     font-family: "Montserrat Light", sans-serif;
-}
+  }
 
-h3 {
+  .topNavigation 
+  
+  h3 {
     max-width: 300px;
     color: #373737;
     font-family: Montserrat, sans-serif;
@@ -30,12 +33,42 @@ h3 {
     position: relative;
     top: 20px;
     left: 110px;
-}
-img.selfPortrait{
+  }
+  
+  img.selfPortrait {
     max-width: 100px;
     height: 70px;
     width: 70px;
     position: relative;
-    bottom: 45px;
-    left: 25px;
-}
+    bottom: 30px;
+    right: 1280px;
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .topNavigation {
+      height: 70px;
+    }
+    
+    .topNavigation a {
+      padding: 5px 10px;
+      font-size: 13px;
+      bottom: 42px;
+      left: 55px;
+    }
+    
+    h3 {
+      font-size: 8px;
+      left: 60px;
+      visibility: hidden;
+    }
+    
+    img.selfPortrait {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        bottom: 13px;
+        right: 310px;
+      }
+  }
+  
