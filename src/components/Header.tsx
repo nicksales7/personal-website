@@ -1,7 +1,4 @@
 import "./Header.css";
-import selfPortrait from "../assets/self-portrait.png";
-
-
 
 export default function Header() {
 
@@ -9,7 +6,7 @@ export default function Header() {
         <>
             <div className="topNavigation">
                 <h3>NICHOLAS SALES</h3>
-                <img src={selfPortrait} alt="Self-Portrait"></img>
+                <img className="selfPortrait" src="/self-portrait.png" alt="Self-Portrait"></img>
                 <a href="contact.js">Contact</a>
                 <a href="work.js">Work</a>
                 <a href="projects.js">Projects</a>
