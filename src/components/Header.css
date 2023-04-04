@@ -8,67 +8,62 @@ body {
     overflow: hidden;
     border-radius: 30px;
     height: 110px;
+    position: relative;
   }
   
   .topNavigation a {
     float: right;
     color: #373737;
-    text-align: center;
     padding: 20px 25px;
     text-decoration: none;
-    position: relative;
-    bottom: 40px;
     font-size: 20px;
-    left: 120px;
     font-family: "Montserrat Light", sans-serif;
+    position: relative;
+    top: 20px;
   }
-
-  .topNavigation 
   
   h3 {
     max-width: 300px;
     color: #373737;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 110px;
   }
   
-  img.selfPortrait {
+  .selfPortrait {
     max-width: 100px;
     height: 70px;
     width: 70px;
-    position: relative;
-    bottom: 30px;
-    right: 1280px;
+    position: relative; 
+    bottom: 95px; 
+    left: 25px;
   }
   
   @media screen and (max-width: 768px) {
-
     .topNavigation {
       height: 70px;
     }
-    
+  
     .topNavigation a {
       padding: 5px 10px;
-      font-size: 13px;
-      bottom: 42px;
-      left: 55px;
+      font-size: 15px;
+      font-family: "Montserrat Light", sans-serif;
+      right: 40px;
+      bottom: 10px;
     }
-    
+
     h3 {
-      font-size: 8px;
-      left: 60px;
       visibility: hidden;
     }
-    
+  
     img.selfPortrait {
-        width: 40px;
-        height: 40px;
-        position: relative;
-        bottom: 13px;
-        right: 310px;
-      }
+      width: 40px;
+      height: 40px;
+      position: relative;
+      bottom: 55px; 
+      left: 25px;
+    }
   }
   
