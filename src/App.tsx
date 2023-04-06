@@ -20,11 +20,13 @@ function App() {
       <Header />
       <Box
         sx={{
-          position: "fixed",
-          left: 0,
-          right: 0,
-          top: "40%",
-          transform: "translateY(-50%)",
+          position: "relative",
+          height: "50%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: theme.spacing(2),
           textAlign: "center",
           zIndex: 2,
         }}
@@ -67,5 +69,6 @@ function App() {
     </Box>
   );
 }
+
 
 export default App;
