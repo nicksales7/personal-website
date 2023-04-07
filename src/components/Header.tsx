@@ -26,7 +26,7 @@ export default function Header() {
             bottom: 3,
           }}
         />
-        </Link>
+      </Link>
       <Typography
         variant={"h1"}
         sx={{
@@ -55,56 +55,69 @@ export default function Header() {
           zIndex: 2,
         }}
       >
+        <Link to={"/"}>
+          <Button
+            variant="text"
+            sx={{
+              fontSize: "18px",
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+            }}
+          >
+            Home
+          </Button>
+        </Link>
         <Link to={"/about"}>
-        <Button
-          variant="text"
-          sx={{
-            fontSize: "18px",
-            fontFamily: "Montserrat, sans-serif",
-            color: "#373737",
-          }}
-        >
-          About
-        </Button>
+          <Button
+            variant="text"
+            sx={{
+              fontSize: "18px",
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+              marginLeft: theme.spacing(5),
+            }}
+          >
+            About
+          </Button>
         </Link>
         <Link to={"/contact"}>
-        <Button
-          variant="text"
-          sx={{
-            fontSize: "18px",
-            fontFamily: "Montserrat, sans-serif",
-            color: "#373737",
-            marginLeft: theme.spacing(5),
-          }}
-        >
-          Contact
-        </Button>
+          <Button
+            variant="text"
+            sx={{
+              fontSize: "18px",
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+              marginLeft: theme.spacing(5),
+            }}
+          >
+            Contact
+          </Button>
         </Link>
         <Link to={"/projects"}>
-        <Button
-          variant="text"
-          sx={{
-            fontSize: "18px",
-            fontFamily: "Montserrat, sans-serif",
-            color: "#373737",
-            marginLeft: theme.spacing(5),
-          }}
-        >
-          Projects
-        </Button>
+          <Button
+            variant="text"
+            sx={{
+              fontSize: "18px",
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+              marginLeft: theme.spacing(5),
+            }}
+          >
+            Projects
+          </Button>
         </Link>
         <Link to={"/work"}>
-        <Button
-          variant="text"
-          sx={{
-            fontSize: "18px",
-            fontFamily: "Montserrat, sans-serif",
-            color: "#373737",
-            marginLeft: theme.spacing(5),
-          }}
-        >
-          Work
-        </Button>
+          <Button
+            variant="text"
+            sx={{
+              fontSize: "18px",
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+              marginLeft: theme.spacing(5),
+            }}
+          >
+            Work
+          </Button>
         </Link>
       </Box>
       <Box
@@ -115,7 +128,6 @@ export default function Header() {
           width: 1,
           height: "100%",
           backgroundColor: "#e7e7e7",
-          borderRadius: "40px 40px 40px 40px",
           zIndex: 1,
         }}
       />
