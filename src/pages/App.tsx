@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import Header from "./components/Header";
+import Header from "../components/Header";
 
 function App() {
   const theme = useTheme();
