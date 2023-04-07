@@ -20,10 +20,22 @@ export default function Header() {
             alt="Nicholas Sales"
             src={selfPortrait}
             sx={{
-              height: "65px",
-              width: "65px",
+              height: {
+                xs: theme.spacing(4),
+                sm: theme.spacing(5),
+                md: theme.spacing(8),
+              },
+              width: {
+                xs: theme.spacing(4),
+                sm: theme.spacing(5),
+                md: theme.spacing(8),
+              },
               zIndex: 3,
-              left: 40,
+              left: {
+                xs: 20,
+                sm: 10,
+                md: 40,
+              },
               bottom: 3,
             }}
           />
@@ -36,6 +48,11 @@ export default function Header() {
             marginLeft: theme.spacing(7),
             fontSize: "20px",
             zIndex: 2,
+            visibility: {
+              xs: "hidden",
+              sm: "hidden",
+              md: "visible",
+            },
           }}
         >
           NICHOLAS SALES
@@ -60,7 +77,16 @@ export default function Header() {
             <Button
               variant="text"
               sx={{
-                fontSize: "18px",
+                fontSize: {
+                  xs: theme.spacing(1),
+                  sm: theme.spacing(2),
+                  md: theme.spacing(2),
+                },
+                visibility: {
+                  xs: "hidden",
+                  sm: "visible",
+                  md: "visible",
+                },
                 fontFamily: "Montserrat, sans-serif",
                 color: "#373737",
               }}
@@ -72,10 +98,17 @@ export default function Header() {
             <Button
               variant="text"
               sx={{
-                fontSize: "18px",
+                fontSize: {
+                  sm: theme.spacing(2),
+                  md: theme.spacing(2),
+                },
                 fontFamily: "Montserrat, sans-serif",
                 color: "#373737",
-                marginLeft: theme.spacing(5),
+                marginLeft: {
+                  xs: theme.spacing(1),
+                  sm: theme.spacing(3),
+                  md: theme.spacing(5),
+                },
               }}
             >
               About
@@ -85,10 +118,17 @@ export default function Header() {
             <Button
               variant="text"
               sx={{
-                fontSize: "18px",
+                fontSize: {
+                  sm: theme.spacing(2),
+                  md: theme.spacing(2),
+                },
                 fontFamily: "Montserrat, sans-serif",
                 color: "#373737",
-                marginLeft: theme.spacing(5),
+                marginLeft: {
+                  xs: theme.spacing(1),
+                  sm: theme.spacing(3),
+                  md: theme.spacing(5),
+                },
               }}
             >
               Contact
@@ -98,10 +138,17 @@ export default function Header() {
             <Button
               variant="text"
               sx={{
-                fontSize: "18px",
+                fontSize: {
+                  sm: theme.spacing(2),
+                  md: theme.spacing(2),
+                },
                 fontFamily: "Montserrat, sans-serif",
                 color: "#373737",
-                marginLeft: theme.spacing(5),
+                marginLeft: {
+                  xs: theme.spacing(1),
+                  sm: theme.spacing(3),
+                  md: theme.spacing(5),
+                },
               }}
             >
               Projects
@@ -111,10 +158,17 @@ export default function Header() {
             <Button
               variant="text"
               sx={{
-                fontSize: "18px",
+                fontSize: {
+                  sm: theme.spacing(2),
+                  md: theme.spacing(2),
+                },
                 fontFamily: "Montserrat, sans-serif",
                 color: "#373737",
-                marginLeft: theme.spacing(5),
+                marginLeft: {
+                  xs: theme.spacing(1),
+                  sm: theme.spacing(3),
+                  md: theme.spacing(5),
+                },
               }}
             >
               Work
