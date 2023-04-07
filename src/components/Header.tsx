@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import selfPortrait from "../assets/self-portrait.png";
 import { Avatar, Box, Button, Typography, useTheme } from "@mui/material";
 
@@ -13,7 +14,7 @@ export default function Header() {
         height: "100px",
       }}
     >
-      <a href="https://nicksales.dev/">
+      <Link to={"/"}>
         <Avatar
           alt="Nicholas Sales"
           src={selfPortrait}
@@ -25,7 +26,7 @@ export default function Header() {
             bottom: 3,
           }}
         />
-      </a>
+        </Link>
       <Typography
         variant={"h1"}
         sx={{
@@ -54,6 +55,7 @@ export default function Header() {
           zIndex: 2,
         }}
       >
+        <Link to={"/about"}>
         <Button
           variant="text"
           sx={{
@@ -64,6 +66,8 @@ export default function Header() {
         >
           About
         </Button>
+        </Link>
+        <Link to={"/contact"}>
         <Button
           variant="text"
           sx={{
@@ -75,6 +79,8 @@ export default function Header() {
         >
           Contact
         </Button>
+        </Link>
+        <Link to={"/projects"}>
         <Button
           variant="text"
           sx={{
@@ -86,6 +92,8 @@ export default function Header() {
         >
           Projects
         </Button>
+        </Link>
+        <Link to={"/work"}>
         <Button
           variant="text"
           sx={{
@@ -97,6 +105,7 @@ export default function Header() {
         >
           Work
         </Button>
+        </Link>
       </Box>
       <Box
         sx={{
