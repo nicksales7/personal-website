@@ -4,7 +4,7 @@ import Header from "../components/Header";
 export default function About() {
   const theme = useTheme();
   return (
-    <div>
+    <>
       <Box
         sx={{
           position: "fixed",
@@ -68,6 +68,6 @@ export default function About() {
           </Typography>
         </Box>
       </Box>
-    </div>
+    </>
   );
 }

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 
 export default function Contact() {
   return (
-    <div>
+    <>
       <Box
         sx={{
           position: "fixed",
@@ -18,6 +18,6 @@ export default function Contact() {
       >
         <Header />
       </Box>
-    </div>
+    </>
   );
 }
