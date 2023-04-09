@@ -1,5 +1,6 @@
 import { Box, useTheme, Typography } from "@mui/material";
 import Header from "../components/Header";
+import myImage from "../assets/light-gaussian-blur-wallpaper-3230-3434-hd-wallpapers.png";
 
 export default function About() {
   const theme = useTheme();
@@ -12,7 +13,7 @@ export default function About() {
           right: 0,
           bottom: 0,
           left: 0,
-          backgroundImage: 'url("https://i.imgur.com/mtgsbMS.png")',
+          backgroundImage: `url(${myImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -21,12 +22,44 @@ export default function About() {
         <Box
           sx={{
             position: "relative",
-            height: "50%",
+            height: "20%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding: theme.spacing(15),
+            padding: theme.spacing(10),
+            textAlign: "center",
+            zIndex: 2,
+          }}
+        >
+          <Typography
+            variant={"h1"}
+            sx={{
+              fontFamily: "Montserrat, sans-serif",
+              color: "#373737",
+              fontSize: {
+                xs: theme.typography.pxToRem(10),
+                sm: theme.typography.pxToRem(11),
+                md: theme.typography.pxToRem(13),
+                lg: theme.typography.pxToRem(15),
+                xl: theme.typography.pxToRem(30),
+              },
+            }}
+          >
+            "Advancing our future through computation and technology means
+            transcending boundaries and redefining the possible."
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            position: "relative",
+            height: "0%",
+            bottom: theme.spacing(8),
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: theme.spacing(12),
             textAlign: "center",
             zIndex: 2,
           }}
@@ -45,11 +78,9 @@ export default function About() {
               },
             }}
           >
-            "Advancing our future through computation and technology means
-            transcending boundaries and redefining the possible." From an early
-            age, I found myself drawn to the world of programming and
-            computation. Naturally, I chose to follow my passion by pursuing a
-            Computer Science degree at Carleton University. In parallel, I am
+            From an early age, I found myself drawn to the world of programming
+            and computation. Naturally, I chose to follow my passion by pursuing
+            a Computer Science degree at Carleton University. In parallel, I am
             honing my skills as a full-stack software engineer, focusing on
             writing clean, efficient code for diverse projects - from gaming and
             web development to automation of everyday tasks. Additionally, I'm
